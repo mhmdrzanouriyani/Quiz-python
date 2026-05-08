@@ -1,36 +1,106 @@
+<h1 align="center">🧠 Python Quiz App</h1>
 
-# Python Quiz Application
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.7+-blue?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Type-CLI%20Quiz-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Level-Beginner-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/mhmdrzanouriyani/Quiz-python?style=for-the-badge" />
+</p>
 
-این برنامه یک آزمون ساده تعاملی با استفاده از زبان پایتون است که به کاربر سوالات چندگزینه‌ای می‌دهد و پاسخ‌های او را دریافت و ارزیابی می‌کند. در پایان، تعداد پاسخ‌های صحیح را نمایش می‌دهد.
-
-## توضیحات
-
-- سوالات به صورت دیکشنری شامل متن سوال، گزینه‌ها و پاسخ صحیح تعریف شده‌اند.
-- برنامه سوالات را به ترتیب نمایش می‌دهد و از کاربر می‌خواهد گزینه صحیح (A, B, C, یا D) را وارد کند.
-- پاسخ کاربر با پاسخ درست مقایسه می‌شود و در صورت درست بودن، امتیاز افزایش می‌یابد.
-- در پایان، تعداد پاسخ‌های صحیح نسبت به کل سوالات نمایش داده می‌شود.
-- ورودی کاربر به حروف بزرگ تبدیل می‌شود تا حساسیت به حروف کوچک و بزرگ از بین برود.
-
-## نحوه اجرا
-
-1. کد را در فایل `quiz.py` ذخیره کنید.
-2. در محیط ترمینال یا کامندلاین به پوشه فایل بروید.
-3. دستور زیر را اجرا کنید:
-   ```bash
-   python quiz.py
-   ```
-4. سوالات روی صفحه نمایش داده می‌شوند و شما باید گزینه درست را وارد کنید.
-5. پس از پایان سوالات، نتیجه کلی نمایش داده می‌شود.
-
-## نکته
-
-- اطمینان حاصل کنید که پایتون روی سیستم شما نصب است.
-- برنامه به گونه‌ای طراحی شده که به راحتی می‌توانید سوالات جدید به لیست `questions` اضافه کنید.
+<p align="center">
+  An interactive Python quiz app that tests your programming knowledge.<br>
+  Answer multiple choice questions and get your score at the end.
+</p>
 
 ---
 
-موفق باشید  
-**MOHAMMADREZA NOURIYANI**
+## ✨ Features
 
-[کانال یوتیوب Mohixcode](https://www.youtube.com/@Mohixcode)  
-[صفحه اینستاگرام Mohix_code](https://www.instagram.com/mohix_code)
+- ✅ Multiple choice questions (A, B, C, D)
+- ✅ Case-insensitive input (a or A both work)
+- ✅ Live correct/wrong feedback after each question
+- ✅ Final score display
+- ✅ Easy to add new questions
+- ✅ No external dependencies — pure Python
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/mhmdrzanouriyani/Quiz-python.git
+cd Quiz-python
+```
+
+### 2. Run it
+```bash
+python quiz.py
+```
+
+### 3. Answer the questions
+```
+What does 'print()' do in Python?
+A. It adds two numbers
+B. It saves data to a file
+C. It displays text or values on the screen
+D. It makes a new variable
+Enter your answer (A, B, C, or D): C
+Correct!
+
+You got 5 out of 5 questions correct.
+```
+
+---
+
+## ➕ How to Add New Questions
+
+Open `quiz.py` and add to the `questions` list:
+
+```python
+{
+    "prompt": "Your question here?",
+    "options": [
+        "A. Option one",
+        "B. Option two",
+        "C. Option three",
+        "D. Option four"
+    ],
+    "answer": "A"  # correct option letter (uppercase)
+}
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Quiz-python/
+├── quiz.py             # Main quiz script
+├── requirements.txt    # No dependencies needed
+├── .gitignore          # Git ignore rules
+└── README.md           # This file
+```
+
+---
+
+## 📌 Roadmap
+
+- [ ] Add more question categories (networking, Linux, AI)
+- [ ] Add a timer per question
+- [ ] Save high scores to a file
+- [ ] Build a web version with Flask
+
+---
+
+## 👨‍💻 Author
+
+**Mohammadreza Nouriyani**
+
+[![YouTube](https://img.shields.io/badge/YouTube-Mohix_Code-red?style=flat&logo=youtube)](https://www.youtube.com/@Mohixcode)
+[![Instagram](https://img.shields.io/badge/Instagram-mohix_code-purple?style=flat&logo=instagram)](https://www.instagram.com/mohix_code)
+[![GitHub](https://img.shields.io/badge/GitHub-mhmdrzanouriyani-black?style=flat&logo=github)](https://github.com/mhmdrzanouriyani)
+
+---
+
+⭐ If this helped you, please give it a star!
